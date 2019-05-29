@@ -307,7 +307,7 @@ class NeuronCell extends Cell{
 			//ten iterations?
 			this.messaging += 1;
 		}
-		//other case
+		//other case  
 		else if (this.messaging >= time && !this.cooled){
 			this.cooldown = true;
 			this.signal_neighbors();
