@@ -2,7 +2,7 @@
    <head>
       <title>Cellsv1</title>
    </head>
-   <script src = './linecells.js'></script>
+   <script src = './cells.js'></script>
    <style>
       canvas{
          border: 1px dotted black;
@@ -15,14 +15,14 @@
          var canvas = document.createElement('canvas');
          canvas.id = 'canvas1';
 
-         canvas.height =  600;
+         canvas.height =  1000;
          canvas.width = 1000;
          document.body.appendChild(canvas);
          var context = canvas.getContext('2d');
          var center_y = canvas.height / 2.0;
          var center_x = canvas.width / 2.0;
-         var grid_width = 10;
-         var max_size = 20;
+         var grid_width = 500;
+         var max_size = 10;
 
          var max_cells = 10000;
          var color = "black";
@@ -46,6 +46,8 @@
 
          function gameLoop(){
             if (loaded){
+               context.clearRect(0,0,canvas.width, canvas.height);
+               state.update();
                update_cells(cells);
                render_cells(cells);
             }
