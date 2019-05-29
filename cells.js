@@ -207,6 +207,7 @@ class Cell{
 				this.y += (to_move * (nbr.y - this.y)/ dist)/2;
 			}
 			else{
+				/*
 				//attractive forces
 				if (dist === 0.0){
 					//if same cell?
@@ -218,7 +219,7 @@ class Cell{
 				var y_move = (to_move * (nbr.y - this.y)/ (dist*dist*dist));
 				this.x += x_move; //use distance squared
 				this.y += y_move;
-				
+				*/
 			}
 		}
 

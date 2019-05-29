@@ -9,14 +9,21 @@
       }
    </style>
    <body>
+      <p> Just a little project I'm working on, looking at the emergent properties of cellular systems when you give them only local information. </p>
+      <ul> 
+         <li> Click to add cells that respond to the red cells signaling</li>
+         <li> They will propagate responses. </li>
+         <li> If you draw them in a snake pattern, or like a neuron, it will look the coolest </li>
+
+      </ul>
       <script>
          //canvas code
          loaded = false;
          var canvas = document.createElement('canvas');
          canvas.id = 'canvas1';
 
-         canvas.height =  1000;
-         canvas.width = 1000;
+         canvas.height =  500;
+         canvas.width = 500;
          document.body.appendChild(canvas);
          var context = canvas.getContext('2d');
          var center_y = canvas.height / 2.0;
@@ -60,5 +67,6 @@
           loaded = true;
         });
       </script>
+      <p> I would really love to keep extending this project, and try to explore both emergent properties of cells, as well as what you can program into them. (Cellular migration, organ formation, etc.) </p>
    </body>
 </html>
